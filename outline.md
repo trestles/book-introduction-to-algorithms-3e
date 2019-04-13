@@ -145,17 +145,89 @@
 ## IV Advanced Design and Analysis Techniques 
 #### 15 Dynamic Programming p359
 - 15.1 Rod Cutting p360
+  - rod-cutting problem p360
+  - Figure 15.1 A sample price table for rods p360
+  - Figure 15.2 The 8 possible ways of cutting up a rod of length 4 p361
+  - optimal substructure p362
+  - Recursive top-down implementation p363
+    - CUT-ROD(p, n) p363
+    - Figure 15.3 - The recursion tree showing recursive calls resulting from a call CUT-ROD(p, n) for n = 4 p364
+  - Using dynamic programming for optimal rod cutting p364
+  - Subproblem graphs p367
+  - Reconstructing a solution p368
+    - EXTENDED-BOTTOM-UP-CUT-ROD(p, n) 
+    - PRINT-CUT-ROD-SOLUTION(p, n) p369
 - 15.2 Matrix-chain multiplication p370
+  - MATRIX-MULTIPLY(A, B) p371
+  - Counting the number of parenthesizations p372
+  - Applying dynamic programming p372
+  - Step 1: The structure of an optimal parenthesization p373
+  - Step 2: A recursive solution p374
+  - Step 3: Computing the optimal costs p374
+  - Step 4: Constructing an optimal solution p377
 - 15.3 Elements of dynamic programming p378
+  - Optimal substructure p379
+  - Subtleties p381
+    - Unweighted shortest path p381
+    - Unweighted longest simple path p382
+  - Overlapping subproblems p384
+  - Reconstructing an optimal solution p387
+  - Memoization p387
 - 15.4 Longest common subsequence p390
+  - Step 1: Characterizing a longest common subsequence p392
+  - Step 2: A recursive solution p393
+  - Step 3: Computing the length of an LCS p393
+  - Step 4: Constructing an LCS p394
+  - Improving the code p396
 - 15.5 Optimal binary search trees p397
+  - Step 1: The structure of an optimal binary search tree p399
+  - Step 2: A recursive solution p400
+  - Step 3: Computing the expected search cost of an optimal binary search tree p401
+    - OPTIMAL-BST(p, q, n) p402
+- Chapter notes p412
 
 #### 16 Greedy Algorithms p414
 - 16.1 An activity-selection problem p415
+  - The optimal substructure of the activity-selection problem p416
+  - Making the greedy choice p417
+    - Theorem 16.1 p428
+    - Proof p418
+  - A recursive greedy algorithm p418
+    - RECURSIVE-ACTIVITY-SELECTOR(s, f, k, n) p419
+  - An iterative greedy algorithm p419
 - 16.2 Elements of the greedy strategy p423
+  - Greedy-choice property p424
+  - Optimal substructure p425
+  - Greedy vs dynamic programming p425
 - 16.3 Huffman codes p428
+  - figure 16.3 - A character coding problem p429
+  - Prefix codes p429
+    - figure 16.4 Trees corresponding to the coding schemes in Figrue 16.3 
+  - Constructing a Huffman code p431
 - 16.4 * Matroids and greedy methods p437
+  - Matroids p437
+    - Theorem 16.5 p438
+      - Proof p438
+    - Theorem 16.6 
+      - Proof p439
+    - Greedy algorithms on a weighted matroid p439
+      - GREEDY(M, w) p440
+    - Lemma 16.7 (Matroids exhibit the greedy-choice property) p441
+      - Proof p441
+    - Lemma 16.8 p441
+      - Proof p441
+    - Corollary 16.9 p441
+      - Proof p441
+    - Lemma 16.10 (Matroids exhibit the optimal-substructure property)
+      - Proof p442
+    - Theorem 16.11 (Correctness of the greedy algorithm on matroids)
+      - Proof p442
 - 16.5 * A task-scheduling problem as a matroid p443
+  - Lemma 16.12 p445
+    - Proof p445
+  - Theorem 16.13 
+    - Proof p445
+    - Figure 16.7 
 
 #### 17 Amortized Analysis p451
 - 17.1 Aggregate analysis p452
@@ -165,9 +237,29 @@
 
 ## V Advanced Data Structures 
 #### 18 B-Trees p484
-- 18.1 Definition of B-trees p485
+  - Data structures on secondary storage p484
+    - Figure 18.1 B-tree whose keys are the consonants of English p485
+    - Figure 18.2 A typical disk drive p485
+    - Figure 18.3 A B-tree of height 2 containing over 1 billion keys p488
+- 18.1 Definition of B-trees p488
+  - The height of a B-tree p489
+    - Theorem 18.1 p489
+      - Proof p489
 - 18.2 Basic operation on B-trees p491
+  - Searching a B-tree p491
+  - Creating an empty B-tree p492
+  - Inserting a key into a B-tree p493
+  - Splitting a node in a B-tree p493
+  - Inserting a key into a B-tree in a single pass down the tree p495
+    - Figure 18.6 Splitting the root with t = 4 p496
+    - B-TREE-INSERT-NONFULL(x, k) p496
+    - Figure 18.7 Inserting keys into a B-tree p498
 - 18.3 Deleting a key from a B-tree p499
+  - Figure 18.8 Deleting keys from a B-tree p500
+- Problems 
+  - 18-1 Stacks on a secondary storage p502
+  - 18-2 Joining and splitting 2-3-4 trees p503
+- Chapter notes p504
 
 #### 19 Fibonacci Heaps p505
 - 19.1 Structure of Fibonacci heaps p507
@@ -182,6 +274,10 @@
 
 #### 21 Data Structures as Disjoint Sets p561
 - 21.1 Disjoint-set operations p561
+  - An application of disjoint-set data structures p562
+    - Figure 21.1 (a) A graph with four connected components: {a,b,c,d}, {e,f,g},{h,i} and {j} (b) The collection of disjoint sets after processing each edge p563
+    - CONNECTED-COMPONENTS(G) p563
+    - SAME-COMPONENT(u, v) p564
 - 21.2 Linked-list representation of disjoint sets p564
 - 21.3 Disjoint-set forests p568
 - 21.4 * Analysis of union by rank with path compression p573
