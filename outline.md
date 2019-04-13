@@ -62,15 +62,73 @@
 
 #### 11 Hash Tables p253
 - 11.1 Direct-address tables p254
+  - Figure 11.1 p254
 - 11.2 Hash tables p256
+  - Figure 11.2 p256
+  - Figure 11.3 p257
+  - Collusion resolution by chaining p257
+  - Analysis of hashing with chaining p258
+    - simple uniform hashing p259
+    - Theorem 11.1 p259
+      - Proof p259
+    - Theorem 11.2 p259
+      - Proof p259
 - 11.3 Hash functions p262
+  - What makes a good hash function? p262
+  - Interpreting keys as natural numbers p263
+  - 11.3.1 The division method p263
+  - 11.3.2 The multiplication method p263
+    - Figure 11.4 
+  - 11.3.3 * Universal hashing p265
+    - Theorem 11.3 p265
+      - Proof p265
+    - Corollary 11.4 p266
+      - Proof p266
+    - Designing a universal class of hash functions p267
+      - Theorem 11.5 p267
+        - Proof p267
 - 11.4 Open addressing p269
+  - HASH-INSERT(T, k) p270
+  - HASH-SEARCH(T, k) p271
+  - Linear probing p272
+  - Quadratic probing p272
+  - Double hashing p272
+  - Analysis of open-address hashing p274
+    - Theorem 11.6 p274
+      - Proof p274
+    - Corollary 11.7 p276
+      - Proof p276
+    - Theorem p276
 - 11.5 *Perfect hashing p277
+  - Theorem 11.9 p279
+    - Proof p279
+  - Theorem 11.10 p280
+    - Proof p280
+  - Corollary 11.11 p281
+    - Proof p281
+  - Corollary 11.12 p281
+    - Proof p282
+  - Exercises p282
 
 #### 12 Binary Search Trees p286
 - 12.1 What is a binary search tree? p286
+  - Figure 12.1 p287
+  - INORDER-TREE-WALK(x) p288
+  - Theorem 12.1 p288
+    - Proof p288
+  - Exercises p289
 - 12.2 Querying a binary search tree p289
+  - Searching p289
+  - Minimum and Maximum p291
+  - Successor and predecessor p291
+  - Theorem 12.2
 - 12.3 Insertion and deletion p294
+  - Insertion p294
+    - Figure 12.3
+  - Deletion p295
+    - Figure 12.4 p297
+  - Theorem 12.3 p298
+  - Exercises p299
 - 12.4 * Randomly build binary search trees p299
 
 #### 13 Red-Black Trees p308
