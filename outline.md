@@ -12,15 +12,49 @@
 
 #### 3 Growth of Functions 43
 - 3.1 Asymptotic Notation p43
+  - Asymptotic notation, functions, and running times p44
+  - Theta - notation p44
+  - Big-O-Notation p47
+  - Omega Notation p48
+  - Asymptotic notation in equations and inequalities p49
 - 3.2 Standard Notations and Common Functions p53
+  - Monotonicity p53
+  - Floors and Ceilings p54
+  - Modular Arithmetic p54
+  - Polynomials p55
+  - Exponentials p55
+  - Logarithms p56
+  - Factorials p57
+  - Functional Iteration p58
+  - The iterated logarithm function p58
+  - Fibonacci numbers p59
 
 #### 4 Divide and Conquer p65
+- Recurrences p65
+- Technicalities in recurrences p67
 - 4.1 The maximum-subarray problem p68
+  - A brute-force solution p69
+  - A transformation p69
+  - A solution using Divide and Conquer p70
+  - Analyzing the divide and conquer algorithm p73
 - 4.2 Strassen's algorithm for matrix multiplication p75
+  - A simple divide-and-conquer algorithm p76
+  - Strassen's method p79
 - 4.3 The substitution method for solving recurrences p83
+  - Makign a good guess p84
+  - Subtleties p85
+  - Avoiding pitfalls p86
+  - Changing Variables p86
 - 4.4 The recursion tree method for solving recurrences p88
+  - figure 4.5 Contructing a recursion tree p89
+  - figure 4.6 A recursion tree for the recurrence p91
 - 4.5 The master method for solving recurrences p93
+  - Formula 4.20
+  - The master theorem p94
+  - Using the master method p95
 - 4.6 Proof of the master method p97
+  - 4.6.1 Proof for exact powers p98
+  - 4.6.2 Floors and Ceilings p103
 
 #### 5 Probabilistic Analysis and Randomized Algorithms p114
 - 5.1 The hiring problem p114
